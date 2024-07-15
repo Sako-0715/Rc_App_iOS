@@ -12,7 +12,6 @@ class BaseRequestApi {
     func postShoppingData(id: String, janl: String, price: String, prodact: String, date: String, completion: @escaping (Result<String, Error>) -> Void) {
         // データーベースに送信する
         let url = "http://localhost:8888/KeepFood/iOS/Controller/ShopingController.php"
-        // テスト
         let shopdata: [String: Any] = ["ID": id, "Janl": janl, "Price": price, "Prodact": prodact, "date": date]
         
         AF.request(url, method: .post, parameters: shopdata, encoding: URLEncoding.default)
