@@ -10,7 +10,7 @@ import RealmSwift
 import Alamofire
 
 struct RcHistoryController: View {
-    // 投稿した履歴が入る配列
+    // 投稿した履歴が入る配列 テスト
     @State private var historyDataArray: [HistoryData] = []
     // API通信するmodel
     private let baseRequestAPIModel = BaseRequestApi()
